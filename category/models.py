@@ -15,5 +15,11 @@ class Category(models.Model):
     def get_url(self):
         return reverse('products_by_category', args=[self.slug])
 
+    # def __str__(self):
+    #     return self.category_name
     def __str__(self):
-        return self.category_name
+        if self.category_name:
+            return self.category_name
+        else:
+            return f"Category with ID: {self.id} (Name not set)"
+
