@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 #DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-greatkart-Venv.eba-juqwqsh5.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
